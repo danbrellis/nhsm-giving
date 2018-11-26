@@ -1,0 +1,19 @@
+{
+    "name": "Giving | Natural History Society of Maryland",
+    "short_name": "Giving | Natural History Society of Maryland",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e1e31b",
+    "background_color": "#e1e31b",
+    "display": "standalone"
+}
