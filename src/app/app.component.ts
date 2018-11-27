@@ -25,12 +25,16 @@ export class AppComponent {
       {
         'name': 'facebook',
         'url': 'https://www.facebook.com/marylandnature',
-        'tag': 'Follow us on Facebook!'
+        'tag': 'Follow us on Facebook!',
+        'width': '35',
+        'height': '35'
       },
       {
         'name': 'meetup',
         'url': 'http://www.meetup.com/marylandnature/',
-        'tag': 'Join us on Meetup!'
+        'tag': 'Join us on Meetup!',
+        'width': '58',
+        'height': '35'
       }
   ];
 

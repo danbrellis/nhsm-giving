@@ -1,7 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <header class="background">
   <div class="container">
-    <div class="logo-bar"><a href="https://marylandnature.org/" title="Visit our website" target="_blank"><img src="../assets/logo.png"></a></div>
+    <div class="logo-bar">
+      <a href="https://marylandnature.org/" title="Visit our website" target="_blank">
+        <img src="../assets/logo.png"
+             srcset="../assets/logo@2x.png 2x"
+             width="270"
+             height="121"
+             alt="Natural History Society of Maryland logo depicts a bird on a telephone pole and leafs encircling it to signify the overlap of nature and humans.">
+      </a>
+    </div>
     <h1>Connect with Nature</h1>
     <p class="subheading">Help us continue to engage people with the natural world</p>
     <app-donate-button [text]="'Support our work'"></app-donate-button>
@@ -59,7 +67,11 @@
   <div class="container">
     <div class="footer">
       <a href="https://marylandnature.org/" title="Visit our website." target="_blank">
-        <img src="../assets/nhsm-seal.png" alt="Seal of the Natural History Society of Maryland." />
+        <img src="../assets/nhsm-seal.png"
+             srcset="../assets/nhsm-seal@2x.png 2x"
+             width="117"
+             height="117"
+             alt="Seal of the Natural History Society of Maryland." />
       </a>
       <address>
         <span class="company-name">The Natural History Society of Maryland</span><br />
@@ -68,7 +80,14 @@
       </address>
       <ul class="social">
         <li *ngFor="let social of networks">
-          <a href="{{social.url}}" title="{{social.tag}}" target="_blank"><img src="../assets/{{social.name}}.png" alt="{{social.name + ' icon'}}"></a>
+          <a href="{{social.url}}" title="{{social.tag}}" target="_blank">
+            <img
+              src="../assets/{{social.name}}.png"
+              srcset="../assets/{{social.name}}@2x.png"
+              width="{{social.width}}"
+              height="{{social.height}}"
+              alt="{{social.name + ' icon'}}">
+          </a>
         </li>
       </ul>
     </div>
