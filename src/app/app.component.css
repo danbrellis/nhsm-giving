@@ -2,7 +2,7 @@
 header {
     color: #fff;
     text-align: center;
-    padding: 20px 0 175px;
+    padding: 20px 0 75px;
 }
 header.background {
     background-image: linear-gradient(
@@ -24,11 +24,13 @@ header .subheading {
     font-size: 30px;
     margin-bottom: 1.5em;
 }
-
 @media(min-width: 702px){
     .logo-bar {
         justify-content: flex-end;
     }
+    header {
+         padding-bottom: 175px;
+     }
 }
 
 /* Two Columns */
@@ -112,7 +114,6 @@ header .subheading {
 /* Sponsorship Section */
 #sponsorship {
     color: #fff;
-    padding-bottom: 100px;
 }
 #sponsorship.background {
     background-image: linear-gradient(
@@ -130,6 +131,12 @@ header .subheading {
     text-decoration: underline;
 }
 
+@media (min-width: 480px) {
+    #sponsorship {
+        padding-bottom: 100px;
+    }
+}
+
 /* Wonder Section */
 #oh-wonder {
     color: #fff;
@@ -139,7 +146,6 @@ header .subheading {
 #oh-wonder.background {
     background-image: url(../assets/photo-1444491449371-47c813f25224.jpg);
     background-position: center 48%;
-    background-size: 155%;
 }
 #oh-wonder p {
     text-transform: uppercase;
@@ -153,6 +159,17 @@ header .subheading {
     padding: 0 10px;
     margin: 8px 0;
     display: inline-block;
+}
+
+@media (min-width: 438px){
+    #oh-wonder.background {
+        background-size: 155%;
+    }
+}
+@media (min-width: 769px){
+    #oh-wonder .container {
+        width: 680px;
+    }
 }
 
 /* Footer */

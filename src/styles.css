@@ -16,20 +16,33 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-top: 0;
 }
 h1, .h1 {
-    font-size: 60px;
-    font-weight: 200;
-    margin-bottom: 20px;
-    line-height: 60px;
-}
-h2, .h2 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 300;
     margin-bottom: 20px;
-    line-height: 48px;
+    line-height: 50px;
+}
+h2, .h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 42px;
 }
 h3, .h3 {
     font-size: 36px;
     font-weight: 300;
+}
+@media(min-width: 480px){
+    h1, .h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    h2, .h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    h3, .h3 {
+        font-size: 36px;
+    }
 }
 
 p {
@@ -49,7 +62,6 @@ p {
     touch-action: manipulation;
     cursor: pointer;
     border: 1px solid transparent;
-    white-space: nowrap;
     padding: 6px 12px;
     font-size: 20px;
     line-height: 1.428571429;
@@ -92,5 +104,11 @@ section {
     width: 100%;
     margin: auto;
     max-width: 1050px;
-    padding: 0 40px;
+    padding: 0 20px;
+}
+
+@media (min-width: 480px) {
+    .container {
+        padding: 0 40px;
+    }
 }
