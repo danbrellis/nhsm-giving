@@ -1,20 +1,80 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="background">
+  <div class="container">
+    <div class="logo-bar"><a href="https://marylandnature.org/" title="Visit our website" target="_blank"><img src="../assets/logo.png"></a></div>
+    <h1>Connect with Nature</h1>
+    <p class="subheading">Help us continue to engage people with the natural world</p>
+    <app-donate-button [text]="'Support our work'"></app-donate-button>
+  </div>
+</header>
+<main id="two-columns-container">
+  <section id="generosity">
+    <div class="container two-columns">
+      <div class="two-thirds">
+        <h2>Your Generosity</h2>
+        <p>Because of your generosity, last year we were able to replace our aging roof and add a handicapped accessible restroom to our building. That, of course, was in addition to offering a variety of year-round programs, such as:</p>
+        <ul>
+          <li *ngFor="let program of objectKeys(programs)"><strong>{{program }}</strong>: {{programs[program]}}</li>
+        </ul>
+        <p>We're looking forward to more great programs in 2019. Thank you for your generous support!</p>
+      </div>
+      <aside id="sidebar">
+        <div id="sidebarContent" [style.top]="sbcTop + 'px'">
+          <h2 class="h3">Our Clubs</h2>
+          <dl>
+            <dt>Lep Club</dt>
+            <dd>Members not only learn about raising a variety of beautiful native moths, but they get to do it. From egg to caterpillar to cocoon to adult and back to egg again, members participate in the lifecycle of Luna, Cecropia, Polyphemus, and many other moths. <strong>(Sponsored by Rosedale Federal Savings and Loan!)</strong></dd>
+            <dt>Fossil Club</dt>
+            <dd>From fossil collecting excursions to lectures by experts in the field, members are connected to people with a passion for exploring the earth’s past. From shark’s teeth on the shores of the Chesapeake to trilobytes in western Maryland, members increase their knowledge of the geology of our state.</dd>
+            <dt>Herp Club</dt>
+            <dd>The latest addition to our list of clubs, the Herp Club studies the reptiles and amphibians around the state. Each year the season starts with visiting vernal pools in the spring to watch the nuptial dance of the spotted salamander.</dd>
+          </dl>
+          <p><app-donate-button [text]="'Donate Now'"></app-donate-button></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section id="sponsorship" class="background">
+    <div class="container">
+      <div class="two-thirds">
+        <h2>Sponsorship</h2>
+        <p>From highly engaging educational programs to a wide variety of lectures, family events, workshops, and outdoor explorations, we offer corporations a variety of ways to enhance the cultural life of Marylanders. Your sponsorship increases knowledge of our natural world and inspires youth to pursue careers in the natural sciences. Contact us to talk about ways your sponsorship can have the greatest impact.</p>
+        <p>In addition to helping meet the philanthropic goals of foundations and corporations, we offer many opportunities for exposure, including our online presence, in-house lectures, outdoor programs, and our growing list of members and supporters.</p>
+        <p>Contact us to learn more about corporate sponsorship opportunities:</p>
+        <p>Email: <a href="mailto:nhsm@marylandnature.org" title="Send us an e-mail">nhsm@marylandnature.org</a><br />
+          Phone: <a href="tel:+14108825376" title="Give us a call">410-882-5376</a></p>
+      </div>
+    </div>
+  </section>
+</main>
 
+<section id="oh-wonder" class="background">
+  <div class="container">
+    <p>Help us continue to bring<br />wonder to <span class="boxed">your</span> community</p>
+    <app-donate-button [text]="'Donate to our campaign'"></app-donate-button>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer">
+      <a href="https://marylandnature.org/" title="Visit our website." target="_blank">
+        <img src="../assets/nhsm-seal.png" alt="Seal of the Natural History Society of Maryland." />
+      </a>
+      <address>
+        <span class="company-name">The Natural History Society of Maryland</span><br />
+        6908 Belair Road, Baltimore, MD 21206<br />
+        <a href="tel:+14108825376" title="Give us a call">410 882-5376</a> | <a href="mailto:nhsm@marylandnature.org" title="Send us an e-mail">nhsm@marylandnature.org</a>
+      </address>
+      <ul class="social">
+        <li *ngFor="let social of networks">
+          <a href="{{social.url}}" title="{{social.tag}}" target="_blank"><img src="../assets/{{social.name}}.png" alt="{{social.name + ' icon'}}"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="subFooter">
+      <p>The Natural History Society of Maryland is 501(c)3 organization. Donations are tax-deductible to the full extent of the law.</p>
+      <p><small>Webpage designed & developed by Dan Brellis | &copy; {{today | date:'y'}}</small></p>
+    </div>
+  </div>
+</footer>

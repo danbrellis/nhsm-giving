@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: lato,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.428571429;
+    color: #333;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/* Type */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+}
+h1, .h1 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+h2, .h2 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 48px;
+}
+h3, .h3 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+/* Buttons */
+.button {
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,.35);
+    transition: all .3s ease 0s;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 20px;
+    line-height: 1.428571429;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+.button.button-primary {
+    font-size: 20px;
+    padding: 10px 16px;
+    line-height: 1.3333333;
+    border-radius: 0;
+    color: #a6ce39;
+    background-color: #fff;
+    border-color: #f2f2f2;
+}
+
+.button-primary:hover, .button-primary:focus {
+    background-color: #a6ce39;
+    color: #fff;
+    border-color: #a6ce39;
+}
+
+/* Backgrounds */
+.background {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Structure */
+section {
+    padding: 60px 0;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 970px;
+}

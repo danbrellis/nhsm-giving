@@ -1,0 +1,177 @@
+/* Header */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 175px;
+}
+header.background {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+    ), url(../assets/hero-background.jpg);
+    background-position: center 32%;
+}
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.logo-bar img {
+
+}
+header .subheading {
+    font-size: 30px;
+    margin-bottom: 1.5em;
+}
+
+/* Two Columns */
+#two-columns-container {
+    overflow: hidden;
+}
+.two-columns {
+    position: relative;
+}
+.two-columns aside {
+    width: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f0f6dd;
+    z-index: 9;
+    padding: 20px;
+}
+.two-columns aside p {
+    text-align: center;
+}
+.two-columns aside dt {
+    font-weight: bold;
+}
+.two-columns aside dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 80%;
+}
+#sidebarContent {
+    position: absolute;
+    width: calc(100% - 40px);
+    top: 20px;
+}
+
+
+
+.two-thirds {
+    width: 65%;
+}
+
+/* Generosity Section */
+#generosity {
+    padding-top: 0;
+}
+#generosity .two-thirds {
+    padding-top: 60px;
+}
+#generosity h2 {
+    color: #a6ce39;
+}
+#generosity .h3 {
+    color: #000;
+}
+#generosity li {
+    font-size: 80%;
+}
+
+/* Sponsorship Section */
+#sponsorship {
+    color: #fff;
+    padding-bottom: 100px;
+}
+#sponsorship.background {
+    background-image: linear-gradient(
+            rgba(86,108,96,.75),
+            rgba(86,108,96,.75)
+    ), url(../assets/szbsypx3lsk-rachel-davis.jpg);
+    background-position: center 32%;
+}
+#sponsorship a {
+    color: #a6ce39;
+    text-decoration: none;
+}
+#sponsorship a:hover, #sponsorship a:focus {
+    color: #d7ff3d;
+    text-decoration: underline;
+}
+
+/* Wonder Section */
+#oh-wonder {
+    color: #fff;
+    padding-bottom: 100px;
+    text-align: center;
+}
+#oh-wonder.background {
+    background-image: url(../assets/photo-1444491449371-47c813f25224.jpg);
+    background-position: center 48%;
+    background-size: 155%;
+}
+#oh-wonder p {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.2);
+    margin: 0 auto 32px;
+}
+#oh-wonder p .boxed {
+    border: 3px solid #fff;
+    padding: 0 10px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    background-color: #292526;
+    font-weight: 200;
+    font-size: 18px;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    align-items: flex-end;
+}
+.footer address {
+    margin-left: 40px;
+    flex-grow: 4;
+    font-style: normal;
+}
+.footer address .company-name {
+    font-size: 24px;
+    line-height: 1;
+}
+.footer address a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer address a:hover, .footer address a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.footer .social li {
+    margin-left: 20px;
+}
+.footer .social li img:hover, .footer .social li img:focus {
+    opacity: .75;
+}
+
+.subFooter {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
