@@ -24,7 +24,7 @@ header .subheading {
     font-size: 30px;
     margin-bottom: 1.5em;
 }
-@media(min-width: 702px){
+@media(min-width: 786px){
     .logo-bar {
         justify-content: flex-end;
     }
