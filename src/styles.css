@@ -91,5 +91,6 @@ section {
 .container {
     width: 100%;
     margin: auto;
-    max-width: 970px;
+    max-width: 1050px;
+    padding: 0 40px;
 }

@@ -14,7 +14,7 @@ header.background {
 .logo-bar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 20px;
 }
 .logo-bar img {
@@ -25,6 +25,12 @@ header .subheading {
     margin-bottom: 1.5em;
 }
 
+@media(min-width: 702px){
+    .logo-bar {
+        justify-content: flex-end;
+    }
+}
+
 /* Two Columns */
 #two-columns-container {
     overflow: hidden;
@@ -33,13 +39,15 @@ header .subheading {
     position: relative;
 }
 .two-columns aside {
-    width: 33%;
-    position: absolute;
+    width: 100%;
+    position: relative;
+    height: auto;
     top: 0;
     right: 0;
     background-color: #f0f6dd;
     z-index: 9;
     padding: 20px;
+    margin-top: 50px;
 }
 .two-columns aside p {
     text-align: center;
@@ -53,15 +61,35 @@ header .subheading {
     font-size: 80%;
 }
 #sidebarContent {
-    position: absolute;
-    width: calc(100% - 40px);
+    position: unset;
+    width: auto;
     top: 20px;
 }
 
-
-
-.two-thirds {
-    width: 65%;
+@media (min-width: 1024px) {
+    .two-columns aside {
+        width: 33%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #f0f6dd;
+        z-index: 9;
+        padding: 20px;
+        margin-top: 0;
+    }
+    #sidebarContent {
+        position: absolute;
+        width: calc(100% - 40px);
+        top: 20px;
+    }
+    .two-thirds {
+        width: 65%;
+    }
+}
+@media (max-width: 1023px) {
+    .two-columns aside {
+        height: auto !important;
+    }
 }
 
 /* Generosity Section */
@@ -136,13 +164,10 @@ footer {
     color: #fff;
 }
 .footer {
-    display: flex;
-    align-items: flex-end;
+    text-align: center;
 }
 .footer address {
-    margin-left: 40px;
-    flex-grow: 4;
-    font-style: normal;
+    margin-top: 20px;
 }
 .footer address .company-name {
     font-size: 24px;
@@ -158,15 +183,32 @@ footer {
 }
 .footer .social {
     list-style: none;
-    margin: 0;
+    margin: 20px 0 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 .footer .social li {
     margin-left: 20px;
 }
 .footer .social li img:hover, .footer .social li img:focus {
     opacity: .75;
+}
+
+@media(min-width: 798px){
+    .footer {
+        display: flex;
+        align-items: flex-end;
+        text-align: left;
+    }
+    .footer address {
+        margin-left: 40px;
+        flex-grow: 4;
+        font-style: normal;
+    }
+    .footer .social {
+        justify-content: flex-end;
+    }
 }
 
 .subFooter {
