@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DonateButtonComponent implements OnInit {
 
-  url = 'http://marylandnature.org/support-maryland-nature/donate/';
+  url = 'https://marylandnature.org/support-maryland-nature/donate/';
   @Input() text: string;
 
   constructor() { }
