@@ -102,7 +102,7 @@ header .subheading {
     padding-top: 60px;
 }
 #generosity h2 {
-    color: #a6ce39;
+    color: #367202;
 }
 #generosity .h3 {
     color: #000;
@@ -123,11 +123,11 @@ header .subheading {
     background-position: center 32%;
 }
 #sponsorship a {
-    color: #a6ce39;
+    color: #FCD79C;
     text-decoration: none;
 }
 #sponsorship a:hover, #sponsorship a:focus {
-    color: #d7ff3d;
+    color: #ffefda;
     text-decoration: underline;
 }
 

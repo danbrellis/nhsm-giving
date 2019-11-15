@@ -77,15 +77,15 @@ p {
     padding: 10px 16px;
     line-height: 1.3333333;
     border-radius: 0;
-    color: #a6ce39;
+    color: #367202;
     background-color: #fff;
     border-color: #f2f2f2;
 }
 
 .button-primary:hover, .button-primary:focus {
-    background-color: #a6ce39;
+    background-color: #367202;
     color: #fff;
-    border-color: #a6ce39;
+    border-color: #367202;
 }
 
 /* Backgrounds */
