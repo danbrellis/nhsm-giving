@@ -14,8 +14,8 @@ export class AppComponent {
   sbcRectTop: number = 0;
   programs = {
     'Nature Connections': 'Free, family-friendly, Sunday afternoon programs on subjects such as Beetles, Skulls & Teeth, Vernal Pools, and the Forest Floor.',
-    'Clubs': 'Specialty themed clubs on Lepidoptera (butterflies and moths), Fossils, and Herpetology (reptiles and amphibians). See side panel for more information.',
-    'On-going Series': 'Monthly programs such as What\'s That Plant and Moss Workshop.',
+    'Clubs': 'Specialty themed clubs on Lepidoptera (butterflies and moths), Fossils, Herpetology (reptiles and amphibians), and Archeology. See side panel for more information.',
+    'On-going Series': 'Monthly programs such as What\'s This Plant and Moss Workshop.',
     'Courses': 'In depth courses on subjects such as Archeology, Botany, Geology, Weather, and Mammals.',
     'Field Trips': 'Expert-led outdoor programs exploring fossils, spring wildflowers, wild edibles, vernal pools and more.',
     'Lectures': 'Name a field in natural history and we’ve had an expert talk about it.'
@@ -26,6 +26,20 @@ export class AppComponent {
         'name': 'facebook',
         'url': 'https://www.facebook.com/marylandnature',
         'tag': 'Follow us on Facebook!',
+        'width': '35',
+        'height': '35'
+      },
+      {
+        'name': 'instagram',
+        'url': 'https://www.instagram.com/naturalhistorysocietyofmd/',
+        'tag': 'Follow us on Instagram!',
+        'width': '35',
+        'height': '35'
+      },
+      {
+        'name': 'twitter',
+        'url': 'https://twitter.com/NHSM_Naturalist',
+        'tag': 'Follow us on Twitter!',
         'width': '35',
         'height': '35'
       },

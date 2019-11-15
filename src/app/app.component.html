@@ -20,11 +20,11 @@
     <div class="container two-columns">
       <div class="two-thirds">
         <h2>Your Generosity</h2>
-        <p>Because of your generosity, last year we were able to replace our aging roof and add a handicapped accessible restroom to our building. That, of course, was in addition to offering a variety of year-round programs, such as:</p>
+        <p>Because of your generosity, thousands of Marylanders learned more about the natural world around them. They participated in a diverse variety of programs including:</p>
         <ul>
           <li *ngFor="let program of objectKeys(programs)"><strong>{{program }}</strong>: {{programs[program]}}</li>
         </ul>
-        <p>We're looking forward to more great programs in 2019. Thank you for your generous support!</p>
+        <p>We're looking forward to offering more great programs in the coming year. Thank you for your generous support!</p>
       </div>
       <aside id="sidebar">
         <div id="sidebarContent" [style.top]="sbcTop + 'px'">
@@ -33,9 +33,11 @@
             <dt>Lep Club</dt>
             <dd>Members not only learn about raising a variety of beautiful native moths, but they get to do it. From egg to caterpillar to cocoon to adult and back to egg again, members participate in the lifecycle of Luna, Cecropia, Polyphemus, and many other moths. <strong>(Sponsored by Rosedale Federal Savings and Loan!)</strong></dd>
             <dt>Fossil Club</dt>
-            <dd>From fossil collecting excursions to lectures by experts in the field, members are connected to people with a passion for exploring the earth’s past. From shark’s teeth on the shores of the Chesapeake to trilobytes in western Maryland, members increase their knowledge of the geology of our state.</dd>
+            <dd>From fossil collecting excursions to lectures by experts in the field, members are connected to people with a passion for exploring the earth's past. From shark's teeth on the shores of the Chesapeake to trilobites in western Maryland, members increase their knowledge of the geology of our state.</dd>
             <dt>Herp Club</dt>
-            <dd>The latest addition to our list of clubs, the Herp Club studies the reptiles and amphibians around the state. Each year the season starts with visiting vernal pools in the spring to watch the nuptial dance of the spotted salamander.</dd>
+            <dd>Herp Club members study reptiles and amphibians around the state. The club meets year-round, but the field season starts each year with visiting vernal pools in the spring to watch the nuptial dance of the spotted salamander. It's a great way for members to spend time outdoors.</dd>
+            <dt>Archeology Club</dt>
+            <dd>This club is for anyone interested in archeology, no matter your level of experience. Club members not only learn from presentations from professionals, but also have the opportunity to participate in tours and archeological digs focused on the archeology of Maryland.</dd>
           </dl>
           <p><app-donate-button [text]="'Donate Now'"></app-donate-button></p>
         </div>
@@ -75,7 +77,7 @@
       </a>
       <address>
         <span class="company-name">The Natural History Society of Maryland</span><br />
-        6908 Belair Road, Baltimore, MD 21206<br />
+        PO Box 18750, 6908 Belair Road, Baltimore, MD 21206<br />
         <a href="tel:+14108825376" title="Give us a call">410 882-5376</a> | <a href="mailto:nhsm@marylandnature.org" title="Send us an e-mail">nhsm@marylandnature.org</a>
       </address>
       <ul class="social">
